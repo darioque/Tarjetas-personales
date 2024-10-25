@@ -1,6 +1,6 @@
 const DarioCard = ({ name, description, imageUrl }) => {
   return (
-    <div className="card text-center shadow-sm rounded-4" style={{ width: "26rem" }}>
+    <div className="card text-center shadow-sm rounded-4 uniform-card">
       {/* Header colored section */}
       <div className="bg-primary p-4 rounded-top-4">
         <div className="position-relative">

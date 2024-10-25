@@ -3,6 +3,7 @@ import TiagoCard from './TiagoCard'
 import CaroCard from './CaroCard'
 import DarioCard from './DarioCard'
 import MaxiCard from './MaxiCard'
+import MariaCard from './MariaCard'
 import BackButton from './BackButton'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
@@ -10,7 +11,7 @@ export default function App() {
   return (
     <Router>
       <main className='container'>
-        <h1 className='text-center'>Tarjetas personales G6</h1>
+        <h1 className='text-center arvo-regular' style={{ textDecoration: 'underline', color:'#1974b0' ,textDecorationColor: '#1974b0' }}>Tarjetas personales G6</h1>
         <Routes>
           {/* Ruta por defecto: Muestra todas las tarjetas */}
           <Route
@@ -40,6 +41,12 @@ export default function App() {
                   <MaxiCard
                     name="Maximiliano Pereyra"
                     description="Enfocado en crear proyectos webs intuitivos y eficientes. Me gusta aportar soluciones creativas y funcionales."
+                  />
+                </Link>
+                <Link to="/maria" style={{ textDecoration: 'none' }}>
+                  <MariaCard
+                    name="Maria Ozuna"
+                    description="Soy una desarrolladora de software apasionada por el diseño de interfaces amigables y accesibles."
                   />
                 </Link>
               </div>
@@ -93,6 +100,19 @@ export default function App() {
                 <MaxiCard
                   name="Maximiliano Pereyra"
                   description="Enfocado en crear proyectos webs intuitivos y eficientes. Me gusta aportar soluciones creativas y funcionales."
+                />
+                <BackButton /> 
+              </div>
+            }
+          />
+          {/* Ruta para la tarjeta de Maria */}
+          <Route
+            path="/maria"
+            element={
+              <div className="d-flex flex-column align-items-center text-center">
+                <MariaCard
+                  name="Maria Ozuna"
+                  description="Soy una desarrolladora de software apasionada por el diseño de interfaces amigables y accesibles."
                 />
                 <BackButton /> 
               </div>

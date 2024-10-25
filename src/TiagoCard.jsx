@@ -1,8 +1,7 @@
 const TiagoCard = ({ name, description }) => {
   return (
     <div
-      className="card text-center rounded shadow border border-dark-subtle bg-light bg-gradient"
-      style={{ width: "26rem" }}
+      className="card text-center rounded shadow border border-dark-subtle bg-light bg-gradient uniform-card"
     >
       <img
         src="/img/perfilTiago.jpg"
