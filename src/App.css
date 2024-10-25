@@ -1,0 +1,25 @@
+main {
+  background-color:#c1b3b3;
+  text-align:center;
+}
+.pink-card{
+  background-color:#fdf1f1;
+
+}
+.amiko-regular {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bad-script-regular {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
