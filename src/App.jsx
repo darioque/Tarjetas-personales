@@ -29,6 +29,7 @@ export default function App() {
                   <DarioCard
                     name="Dario Skidelsky"
                     description="Desarrollador apasionado por crear experiencias digitales innovadoras e impactantes."
+                    imageUrl="../img/DarioPic.jpg"
                   />
                 </Link>
                 <Link to="/caro" style={{ textDecoration: 'none' }}>
